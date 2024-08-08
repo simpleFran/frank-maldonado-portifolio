@@ -1,20 +1,24 @@
-import Image from "next/image"
-import { SectionTitle } from "../sectionTitle/section-title"
+import { SectionTitle } from "../sectionTitle/section-title";
 
-import "./experience.scss"
-import { Skill } from "../skill/skill"
+import { Skill } from "../skill/skill";
+import "./experience.scss";
 
-export function Experience(){
-    return(
-        <div className="experience">
-          <SectionTitle text="Experience"/>
-          <p>3 years working as a Software Developer, in companys such as Itaú, Stone and Aftersale.</p>
-          <div className="experience-time">
-            <Skill image="/react.png" measure={2} years="2 years"/>
-            <Skill image="/ts.png" measure={3} years="3 years"/>
-            <Skill image="/js.png" measure={3} years="3 years"/>
-            <Skill image="/java.png" measure={1} years="1 year"/>
-          </div>
-        </div>
-    )
+export function Experience() {
+  return (
+    <div className="experience">
+      <SectionTitle text="Experi&ecirc;ncia" />
+      <p>
+      Desenvolvendo trabalhos em projetos de software h&aacute; +10 anos.
+      </p>
+      <div className="experience-time">
+        {/* Adicionar  */}
+        <h2>Tecnologias utilizadas mais recente</h2>
+        <Skill image="/js.png" measure={3} years="+3 anos" />
+        <Skill image="/react.png" measure={3} years="+3 anos" />
+        <Skill image="/ts.png" measure={3} years="+3 anos" />
+        <Skill image="/node-node.jpg" measure={3} years="+3 anos" />
+        <Skill image="/next.svg" measure={3} years="+2 anos" />
+      </div>
+    </div>
+  );
 }

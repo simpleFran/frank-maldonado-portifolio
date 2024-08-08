@@ -1,11 +1,16 @@
-import "./section-title.scss"
+import "./section-title.scss";
 
 interface SectionTitleProps {
-    text: string
+  text: string;
+  emoji?: string;
 }
 
-export function SectionTitle({ text } : SectionTitleProps){
-    return(
-        <h3 className="section-title">{text}</h3>
-    )
+export function SectionTitle({ text, emoji }: SectionTitleProps) {
+  return (
+    <div className="section-title">
+      {/* <h3 className="section-title">{text}</h3> */}
+      <h3>{text}</h3>
+      {emoji && <span>{emoji}</span>}
+    </div>
+  );
 }

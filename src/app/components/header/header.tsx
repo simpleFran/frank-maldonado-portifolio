@@ -6,14 +6,14 @@ export function Header(){
     return(
         <div className="header">
           <div>
-            <h1>Hi, i´m Fernanda! 👋</h1>
-            <h2>Software Engineer</h2>
+            <h1>Frank Maldonado 💻</h1>
+            <h2>Programador de Software</h2>
           </div>
           <Image
-            src="/me.jpg"
-            alt="Vercel Logo"
-            width={325}
-            height={310}
+            src="/tentar.png"
+            alt="Site Owner"
+            width={204}
+            height={200}
             priority
           />
         </div>
